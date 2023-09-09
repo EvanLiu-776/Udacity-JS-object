@@ -82,7 +82,6 @@ function randomPickFromArray(list) {
 
 function createFact(list, dino, human) {
     const factName = randomPickFromArray(list)
-    console.log(factName);
     if (typeof factName === "string") {
         return `${factName}: ${dino[factName]}`
     } else {
@@ -111,7 +110,6 @@ function createDinoTile(dino, human) {
     tile.appendChild(speciesTitle)
 
     const speciesImg = document.createElement("img");
-    console.log("dino", dino);
     speciesImg.src = createImgSrc(dino.species)
     tile.appendChild(speciesImg)
 
